@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam’s Seasonal Lighting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0d253f;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1607604276583-e7639fb0e5cd?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: -40px;
+      position: relative;
+      z-index: 1;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    h2 {
+      color: #0d253f;
+    }
+    .contact {
+      background: #0d253f;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+      border-radius: 10px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #b02a37;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sam’s Seasonal Lighting</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Brighten Your Holidays</h1>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Sam’s Seasonal Lighting, we make your holidays shine! Based in Milwaukee, we specialize in professional Christmas light installation, custom designs, and safe removal so you can enjoy a festive season without the hassle.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom holiday light installation</li>
+        <li>Residential & commercial decoration</li>
+        <li>Safe ladder & roof work</li>
+        <li>Take-down and storage options</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>📍 Milwaukee, WI</p>
+      <p>📞 (406) 438-2668</p>
+      <p>📧 <a href="mailto:samuelpete0608@outlook.com" style="color:white;">samuelpete0608@outlook.com</a></p>
+      <a href="mailto:samuelpete0608@outlook.com" class="btn">Get a Free Quote</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sam’s Seasonal Lighting | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
