@@ -4,25 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sam’s Seasonal Lighting | Milwaukee Holiday Light Installation</title>
-  <meta name="description" content="Professional Christmas light installation in Milwaukee, WI. Custom designs, roofline lighting, trees & bushes, takedown & storage. Get a free quote today!" />
-  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="description" content="Custom Christmas light installation in Milwaukee, WI. Solo operator. Roof lines, buildings, trees & bushes. Safe install, optional takedown & storage. Free quote." />
+  <meta name="theme-color" content="#ef4444" />
 
   <!-- Social cards -->
   <meta property="og:title" content="Sam’s Seasonal Lighting" />
-  <meta property="og:description" content="Milwaukee’s stress‑free holiday light pros. Free quotes, safe install, beautiful results." />
+  <meta property="og:description" content="Bright holiday cheer with custom lighting. Solo installer based in Milwaukee, WI." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/cover.jpg" />
 
   <style>
     :root{
-      /* Palette: cool winter blues + warm gold accents */
-      --bg: #0b1220;          /* deep navy */
-      --panel: #0f1a32;       /* darker panel */
-      --ink: #e8eefc;         /* near white */
-      --muted: #9fb4d3;       /* slate blue */
-      --brand: #37b6ff;       /* sky blue */
-      --brand-2: #ffd166;     /* warm gold */
-      --ring: 0 0 0 .14rem rgba(55,182,255,.35);
+      /* Light theme with festive red/green/blue accents */
+      --bg: #f6fbff;          /* light background */
+      --panel: #ffffff;       /* panel surface */
+      --ink: #0b1220;         /* dark text */
+      --muted: #425b7a;       /* slate text */
+      --brand: #ef4444;       /* red */
+      --brand-2: #22c55e;     /* green */
+      --accent-blue: #3b82f6; /* blue */
+      --ring: 0 0 0 .14rem rgba(59,130,246,.25);
     }
     @media (prefers-color-scheme: light){
       :root{ --bg:#f6fbff; --panel:#ffffff; --ink:#0b1220; --muted:#425b7a }
@@ -31,8 +32,9 @@
     html{ scroll-behavior:smooth }
     body{
       margin:0; color:var(--ink); background:
-        radial-gradient(1200px 600px at 80% -10%, rgba(55,182,255,.12), transparent 60%),
-        radial-gradient(900px 500px at -10% 20%, rgba(255,209,102,.10), transparent 60%),
+        radial-gradient(1200px 600px at 80% -10%, rgba(239,68,68,.10), transparent 60%),
+        radial-gradient(900px 500px at -10% 20%, rgba(34,197,94,.08), transparent 60%),
+        radial-gradient(900px 500px at 30% 120%, rgba(59,130,246,.08), transparent 60%),
         var(--bg);
       font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial;
     }
@@ -44,7 +46,7 @@
     .navlinks{ display:flex; flex-wrap:wrap; gap:8px }
     .navlinks a{ color:var(--muted); text-decoration:none; padding:8px 10px; border-radius:10px }
     .navlinks a:hover{ color:var(--ink); background: color-mix(in srgb, var(--panel) 35%, transparent) }
-    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#0b1220; text-decoration:none; font-weight:700; box-shadow: 0 10px 30px rgba(55,182,255,.25) }
+    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#0b1220; text-decoration:none; font-weight:700; box-shadow: 0 10px 30px rgba(239,68,68,.25) }
     .btn.secondary{ background: color-mix(in srgb, var(--panel) 50%, transparent); color:var(--ink); box-shadow:none; border:1px solid color-mix(in srgb, var(--panel) 70%, transparent) }
     .hero{ display:grid; gap:22px; align-items:center; grid-template-columns:1.1fr .9fr; padding: 56px 24px 24px }
     .hero h1{ font-size: clamp(30px, 3vw + 12px, 56px); line-height:1.08; margin:0 }
@@ -60,11 +62,6 @@
     .kicker{ text-transform:uppercase; letter-spacing:.2em; color:var(--brand-2); font-weight:800; font-size:.75rem }
     .pill{ padding:6px 10px; border:1px solid color-mix(in srgb, var(--panel) 70%, transparent); border-radius:999px; color:var(--muted); display:inline-block; margin:4px 6px 0 0 }
     .services li{ margin:6px 0 }
-    .gallery{ display:grid; gap:12px; grid-template-columns: repeat(6, 1fr) }
-    .gallery img{ width:100%; aspect-ratio: 4/3; object-fit:cover; border-radius:12px; border:1px solid color-mix(in srgb, var(--panel) 70%, transparent) }
-    @media (max-width: 900px){ .gallery{ grid-template-columns: repeat(2, 1fr) } }
-    .faq details{ border:1px solid color-mix(in srgb, var(--panel) 70%, transparent); border-radius:12px; padding:12px 14px; margin:10px 0; background: color-mix(in srgb, var(--panel) 50%, transparent) }
-    .faq summary{ cursor:pointer; font-weight:700 }
     footer{ padding: 40px 24px 64px; color:var(--muted); text-align:center }
     .contact-form{ display:grid; gap:12px }
     .contact-form input, .contact-form textarea{
@@ -83,7 +80,6 @@
         <span class="logo" aria-hidden>⭐</span> Sam’s Seasonal Lighting
       </a>
       <div class="navlinks">
-        <a href="#work">Gallery</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact" class="btn">Get Free Quote</a>
@@ -96,57 +92,39 @@
     <section class="hero">
       <div>
         <div class="kicker">Milwaukee, WI</div>
-        <h1>Bright, safe, stress‑free holiday lighting.</h1>
-        <p class="sub">We design and install custom Christmas lighting for homes & businesses — rooflines, trees and bushes, ridges & peaks, and smart timers. We handle takedown & optional storage so you can just enjoy the season.</p>
+        <h1>Bright Holiday Cheer. Custom Lighting.</h1>
+        <p class="sub">I design and install custom Christmas lighting for homes and businesses — roof lines, buildings, trees and bushes, ridges and peaks, and smart plugs. You can set timers yourself, or I can set them for you. Solo operation: you deal directly with me, start to finish.</p>
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px">
           <a class="btn" href="#contact">Get a Free Quote</a>
-          <a class="btn secondary" href="tel:+14064382668">Call/Text (406) 438-2668</a>
+          <a class="btn secondary" href="tel:+14064382668">Call/Text (406) 438‑2668</a>
         </div>
-        <div style="margin-top:10px"><span class="badge">Insured</span> <span class="badge">Roof‑safe</span> <span class="badge">Fast takedown</span></div>
-      </div>
-      <div class="card">
-        <h2 style="margin:0 0 8px">Popular Packages</h2>
-        <ul style="margin:0; padding-left:18px">
-          <li><strong>Starter Roofline</strong> — gutters + peaks, warm white LEDs, timer</li>
-          <li><strong>Classic</strong> — roofline + front bushes/trees</li>
-          <li><strong>Showstopper</strong> — full roofline, gables, trees, yard features</li>
-        </ul>
-        <p class="sub" style="margin:10px 0 0">Every job includes pro‑grade LEDs, clips, extension planning, and safety‑first install.</p>
+        <div style="margin-top:10px"><span class="badge" title="Insured">Insured</span> <span class="badge" title="Roof‑safe">Roof‑safe</span> <span class="badge" title="Fast takedown">Fast takedown</span></div>
       </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- GALLERY / PHOTOS COMING SOON -->
     <section id="work" class="section">
-      <h2><span class="kicker">Portfolio</span><br> Recent Work</h2>
-      <div class="gallery">
-        <!-- Replace these src URLs with your own images in /assets -->
-        <img src="https://images.unsplash.com/photo-1512163143273-bde0e3cc7401?q=80&w=1200&auto=format&fit=crop" alt="Warm white roofline lights on a house" />
-        <img src="https://images.unsplash.com/photo-1513001900722-370f803f4987?q=80&w=1200&auto=format&fit=crop" alt="Lit trees and bushes in a yard" />
-        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1200&auto=format&fit=crop" alt="Holiday lights downtown storefront" />
-        <img src="https://images.unsplash.com/photo-1575381728371-c9f78f7cde5b?q=80&w=1200&auto=format&fit=crop" alt="Gable peaks outlined in LEDs" />
-        <img src="https://images.unsplash.com/photo-1544224031-3cd6c334ffdb?q=80&w=1200&auto=format&fit=crop" alt="Color lights across roofline" />
-        <img src="https://images.unsplash.com/photo-1447384479867-7332d7f07aba?q=80&w=1200&auto=format&fit=crop" alt="Tree wrapped with lights" />
-      </div>
-      <p class="sub" style="margin-top:8px">Want your home featured here? <a href="#contact" class="btn secondary">Book an install</a></p>
+      <h2><span class="kicker">Portfolio</span><br> Photos coming soon</h2>
+      <p class="sub">I’ll post before/after shots and night photos from this season here. Want yours featured? Book an install and I’ll showcase your display (with your permission).</p>
     </section>
 
     <!-- SERVICES -->
     <section id="services" class="section card">
-      <h2><span class="kicker">What we do</span><br> Services</h2>
+      <h2><span class="kicker">What I do</span><br> Services</h2>
       <div class="grid">
         <div class="col-6">
           <ul class="services">
             <li>Custom design & color planning (warm white, color, or combos)</li>
-            <li>Roofline, ridges & peaks, gutters, dormers, porches</li>
+            <li>Roof lines, ridges & peaks, gutters, dormers, porches</li>
             <li>Trees, bushes, yard features, and storefronts</li>
-            <li>Timers, smart plugs, power layout & cable management</li>
+            <li>Timers & smart plugs — you can set them, or I can set them for you</li>
             <li>Safe ladder & roof work, cleanup, and takedown</li>
             <li>Optional labeled storage for easy re‑install next year</li>
           </ul>
         </div>
         <div class="col-6">
-          <p class="sub">Every install uses pro‑grade LED strands and clips sized to your roofline. We measure, cut, and label so your layout is clean and repeatable — no dangling cords, no hot spots.</p>
-          <p class="sub">Serving <strong>Milwaukee, WI</strong> and nearby communities.</p>
+          <p class="sub">I’m up for whatever light hanging you want, but most commonly I outline <strong>roof lines</strong> of houses or buildings. Every install uses pro‑grade LED strands and clips sized to your roof line for a clean, repeatable layout — no dangling cords, no hot spots.</p>
+          <p class="sub">Serving <strong>Milwaukee, WI</strong> and nearby communities. Installation times are arranged during the process at a time convenient for both of us.</p>
         </div>
       </div>
     </section>
@@ -157,14 +135,14 @@
       <div class="grid">
         <div class="col-6">
           <p><strong>$6–$12 per foot</strong> of lights (depending on difficulty, height, roof complexity, and design).</p>
-          <p class="sub">We’ll confirm the exact price after a quick photo-based consult and measurement.</p>
+          <p class="sub">I confirm the exact price after a quick photo‑based consult and measurement.</p>
         </div>
         <div class="col-6">
           <h3 style="margin-top:0">What’s included (whole‑service)</h3>
           <ul>
             <li>My <strong>professional, commercial‑grade</strong> lights (no cheap big‑box strands)</li>
             <li>All <strong>equipment</strong> for a safe install</li>
-            <li><strong>Custom install</strong> to your roofline and preferences</li>
+            <li><strong>Custom install</strong> to your roof line and preferences</li>
             <li><strong>Takedown</strong> at season’s end (if wanted)</li>
             <li><strong>Labeled storage</strong> for next year (if wanted)</li>
           </ul>
@@ -173,17 +151,20 @@
     </section>
 
     <!-- ABOUT -->
-    $1
+    <section id="about" class="section">
+      <div class="grid">
+        <div class="col-6">
           <h2><span class="kicker">About</span><br> Meet Sam</h2>
           <p>Hi I am Sam! I am originally from Montana and going to school out here in Milwaukee at the Milwaukee School of Engineering studying Architectural Engineering. I love to get hands on and have great experience with building/construction around the house as I have completed numerous projects of my own with great help from family for family projects.</p>
           <p>I got into installing Christmas lights because it is one of my favorite holidays besides Easter. I love my Lord and Savior Jesus Christ and love to celebrate in honor of Him. I love the holiday festivities and the overall feeling that this time of the year brings. As a kid I would always make my parents drive me around during the holiday season to look at the Christmas lights! So I figured that why not bring that same joy to you! Give me a shout if interested. God Bless!</p>
           <p class="pill">Insured</p> <p class="pill">OSHA‑minded safety</p> <p class="pill">Pro‑grade materials</p>
-        $3
+        </div>
+        <div class="col-6 card">
           <h3 style="margin-top:0">How it works</h3>
           <ol>
             <li><strong>Quick consult:</strong> share a photo of your house + preferences.</li>
-            <li><strong>Design & quote:</strong> we map the roofline and send options.</li>
-            <li><strong>Install day:</strong> we clip, label, test, tidy, and set timers.</li>
+            <li><strong>Design & quote:</strong> I map the roof line and send options.</li>
+            <li><strong>Install day:</strong> I clip, label, test, tidy, and set timers if you want.</li>
             <li><strong>Takedown:</strong> carefully remove & store (optional).</li>
           </ol>
         </div>
@@ -204,24 +185,22 @@
             <label for="phone">Phone (optional)</label>
             <input id="phone" name="phone" type="tel" placeholder="(###) ###‑####">
             <label for="msg">Message</label>
-            <textarea id="msg" name="message" rows="5" placeholder="Tell us about your house and dates" required></textarea>
+            <textarea id="msg" name="message" rows="5" placeholder="Tell me about your house and dates" required></textarea>
             <button class="btn" type="submit">Send request</button>
-            <p class="sub" style="margin:6px 0 0">Prefer email? <a href="mailto:samuelpete0608@outlook.com">samuelpete0608@outlook.com</a> • Call/text <a href="tel:+14064382668">(406) 438‑2668</a></p>
+            <p class="sub" style="margin:6px 0 0">Prefer email? <a href="mailto:samuelpete0608@outllok.com">samuelpete0608@outllok.com</a> • Call/Text <a href="tel:+14064382668">(406) 438‑2668</a></p>
           </form>
         </div>
         <div class="col-6">
           <div class="card">
-            <h3 style="margin-top:0">Business info</h3>
-            <p>Milwaukee, WI • Mon–Sat 8am–6pm</p>
-            <p>Instagram • TikTok • YouTube (link your handles)</p>
-            <p class="sub">We bring ladders, PPE, outdoor‑rated extension planning, and weather‑aware scheduling.</p>
+            <h3 style="margin-top:0">Info</h3>
+            <p>Milwaukee, WI</p>
+            <p class="sub">Installation times are arranged during the process at a time convenient for both of us.</p>
           </div>
           <div class="card" style="margin-top:12px">
             <h3 style="margin-top:0">FAQs</h3>
             <div class="faq">
-              <details><summary>Do you provide the lights?</summary><p>Yes — pro‑grade LEDs sized to your roofline. Or we can use yours if they’re safe and compatible.</p></details>
-              <details><summary>What if a strand fails?</summary><p>We warranty our install through the season. If something fails, we fix or swap it.</p></details>
-              <details><summary>Do you store lights?</summary><p>We can label and store for an additional fee so next year’s install is faster and cheaper.</p></details>
+              <details><summary>Do you provide the lights?</summary><p>Yes — professional, commercial‑grade LEDs sized to your roof line. Or I can use yours if they’re safe and compatible.</p></details>
+              <details><summary>Do you store lights?</summary><p>I can label and store for an additional fee so next year’s install is faster and cheaper.</p></details>
             </div>
           </div>
         </div>
@@ -246,13 +225,14 @@
     "telephone": "+1-406-438-2668",
     "areaServed": "Milwaukee, WI",
     "address": {"@type":"PostalAddress","addressLocality":"Milwaukee","addressRegion":"WI","addressCountry":"US"},
-    "sameAs": ["https://www.instagram.com/", "https://www.tiktok.com/", "https://www.youtube.com/"]
+    "sameAs": []
   }
   </script>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
+
 
 
 
