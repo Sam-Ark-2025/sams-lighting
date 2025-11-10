@@ -213,41 +213,46 @@
       <div class="grid">
         <div class="col-6 card">
           <h2><span class="kicker">Get a quote</span><br> Contact</h2>
-          <form class="contact-form" name="contact" action="https://formspree.io/f/your-id" method="POST">
-            <!-- Replace the action with your Formspree/Mailthis.to endpoint; or swap for mailto: below -->
-            <label for="name">Name</label>
-            <input id="name" name="name" placeholder="Your name" required>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
-            <label for="phone">Phone (optional)</label>
-            <input id="phone" name="phone" type="tel" placeholder="(###) ###-####">
-            <label for="msg">Message</label>
-            <textarea id="msg" name="message" rows="5" placeholder="Tell me about your house and dates" required></textarea>
-            <button class="btn" type="submit">Send request</button>
-            <p class="sub" style="margin:6px 0 0">Prefer email? <a href="mailto:samuelpete0608@outlook.com">samuelpete0608@outlook.com</a> • Call/Text <a href="tel:+14064382668">(406) 438-2668</a></p>
-          </form>
+          <p class="sub">
+            The fastest way to get a quote is to text or call me directly. 
+            Send a photo of your house and I’ll follow up with ideas and a price range.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:12px">
+            <a class="btn" href="sms:+14064382668">Text Sam</a>
+            <a class="btn secondary" href="tel:+14064382668">Call (406) 438-2668</a>
+            <a class="btn secondary" href="mailto:samuelpete0608@outlook.com">Email Me</a>
+          </div>
+          <p class="sub" style="margin-top:10px">
+            I’ll usually respond the same day during the season.
+          </p>
         </div>
         <div class="col-6">
           <div class="card">
             <h3 style="margin-top:0">Info</h3>
             <p>Milwaukee, WI</p>
-            <p class="sub">Installation times are arranged during the process at a time convenient for both of us.</p>
+            <p class="sub">
+              Installation times are arranged during the process at a time convenient for both of us.
+            </p>
           </div>
           <div class="card" style="margin-top:12px">
             <h3 style="margin-top:0">FAQs</h3>
-            <details><summary>Do you provide the lights?</summary><p>Yes — <strong>professional, commercial-grade</strong> LEDs sized to your roof line (I provide them). Or I can use yours if they’re safe and compatible.</p></details>
-            <details><summary>Do you store lights?</summary><p>I can label and store for an additional fee so next year’s install is faster and cheaper.</p></details>
+            <details>
+              <summary>Do you provide the lights?</summary>
+              <p>
+                Yes — <strong>professional, commercial-grade</strong> LEDs sized to your roof line (I provide them).
+                Or I can use yours if they’re safe and compatible.
+              </p>
+            </details>
+            <details>
+              <summary>Do you store lights?</summary>
+              <p>
+                I can label and store for an additional fee so next year’s install is faster and cheaper.
+              </p>
+            </details>
           </div>
         </div>
       </div>
     </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© <span id="y"></span> Sam’s Seasonal Lighting • Milwaukee, WI</p>
-    </div>
-  </footer>
 
   <!-- LocalBusiness structured data for SEO -->
   <script type="application/ld+json">
@@ -267,6 +272,7 @@
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
+
 
 
 
